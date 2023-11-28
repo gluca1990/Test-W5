@@ -1,0 +1,6 @@
+console.log("CIAO")
+let nav = document.querySelector("nav")
+console.log(nav)
+let header = document.querySelector("header")
+console.dir(scroll)
+header.addEventListener("scroll" , (transition) => {nav.style.backgroundColor ="white"})
