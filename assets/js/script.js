@@ -1,6 +1,19 @@
-console.log("CIAO")
-let nav = document.querySelector("nav")
-console.log(nav)
-let header = document.querySelector("header")
-console.dir(scroll)
-header.addEventListener("scroll" , (transition) => {nav.style.backgroundColor ="white"})
+
+console.dir(document)
+
+
+
+
+
+document.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    const button = document.querySelector('nav ul li:nth-child(5)')
+    if(window.scrollY > 300){
+        nav.classList.add('scrolled');
+        button.classList.add('scrolled');
+    }
+    else{
+        nav.classList.remove('scrolled');
+        button.classList.remove('scrolled');
+    }
+})

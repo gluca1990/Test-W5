@@ -21,17 +21,20 @@ nav {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    transition: background-color 2s linear;
+    transition: background-color 500ms linear;
 
 
 }
 
-/*TRANSITION NAVBAR*/
-nav:hover{
-    background-color: white;
+/*NAVBAR ANIMATION*/
+
+nav ul li:nth-child(5).scrolled{
+    background-color: #538724;
 }
-nav ul li:last-child:hover {
-background-color: green;
+
+nav.scrolled{
+    background-color: #fff ;
+    opacity: 0.98;
 }
 
 
@@ -74,7 +77,6 @@ nav ul li:last-child {
     color:white;
     padding: 2%;
     width: auto;
-    transition: background-color 2s linear;
 }
 
 a {
